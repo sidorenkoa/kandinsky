@@ -18,14 +18,12 @@ if( !isset($content_width) ) {
 }
 
 function knd_setup() {
-
+	
 	// Inits
 	load_theme_textdomain('knd', get_template_directory().'/lang');
 	//add_theme_support( 'automatic-feed-links' );	
 	add_theme_support('title-tag');
 	add_theme_support('html5', array('search-form', 'comment-form', 'comment-list', 'gallery', 'caption',));
-
-	
 
 	// Menus
 	$menus = array(
@@ -46,12 +44,6 @@ function knd_content_init() {
     add_post_type_support('page', 'excerpt');
 }
 add_action( 'init', 'knd_content_init', 30 );
-
-
-
-
-
-
 
 /**
  * Includes
