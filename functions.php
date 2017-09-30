@@ -63,19 +63,19 @@ require_once( ABSPATH . 'wp-admin/includes/media.php' );
 // enqueue CSS and JS and compose inline CSS to set vars from settings
 require get_template_directory().'/core/class-cssjs.php';
 
-require get_template_directory().'/core/media.php'; // customize media behavior and add images sizes
-require get_template_directory().'/core/cards.php'; // layout of cards, list items etc.
-require get_template_directory().'/core/extras.php'; // default WP behavior customization
-require get_template_directory().'/core/shortcodes.php'; // shortcodes core
-require get_template_directory().'/core/shortcodes-ui.php'; // shortcodes layout 
-require get_template_directory().'/core/template-tags.php'; // independent pages parts layout 
-require get_template_directory().'/core/widgets.php'; // setup widgets
-require get_template_directory().'/core/customizer.php'; // WP theme customizer setup
+require get_template_directory().'/core/media.php';           // customize media behavior and add images sizes
+require get_template_directory().'/core/cards.php';           // layout of cards, list items etc.
+require get_template_directory().'/core/extras.php';          // default WP behavior customization
+require get_template_directory().'/core/shortcodes.php';      // shortcodes core
+require get_template_directory().'/core/shortcodes-ui.php';   // shortcodes layout 
+require get_template_directory().'/core/template-tags.php';   // independent pages parts layout 
+require get_template_directory().'/core/widgets.php';         // setup widgets
+require get_template_directory().'/core/customizer.php';      // WP theme customizer setup
 
 // import data utils
-require get_template_directory().'/core/class-mediamnt.php'; // tools for work with files
-require get_template_directory().'/core/class-import.php'; // import files into site media lib
-require get_template_directory().'/core/import.php'; // import helpers
+require get_template_directory().'/core/class-mediamnt.php';  // tools for work with files
+require get_template_directory().'/core/class-import.php';    // import files into site media lib
+require get_template_directory().'/core/import.php';          // import helpers
 
 // include modules
 foreach (glob(get_template_directory() . "/modules/*") as $module_file) {
