@@ -5,13 +5,13 @@
  * @package bb
  */
 
-define('KND_VERSION', '0.2');
-define('TST_DOC_URL', 'https://github.com/Teplitsa/kandinsky/wiki');
-define('KND_DOC_URL', 'https://github.com/Teplitsa/kandinsky/wiki/');
-define('KND_OFFICIAL_WEBSITE_URL', 'https://github.com/Teplitsa/kandinsky/');
-define('TST_OFFICIAL_WEBSITE_URL', 'https://te-st.ru/');
-define('KND_SUPPORT_EMAIL', 'support@te-st.ru');
-define('KND_SETUP_WIZARD_URL', admin_url('themes.php?page=knd-setup-wizard'));
+define('KND_VERSION',               '0.2');
+define('TST_DOC_URL',               'https://github.com/Teplitsa/kandinsky/wiki');
+define('KND_DOC_URL',               'https://github.com/Teplitsa/kandinsky/wiki/');
+define('KND_OFFICIAL_WEBSITE_URL',  'https://github.com/Teplitsa/kandinsky/');
+define('TST_OFFICIAL_WEBSITE_URL',  'https://te-st.ru/');
+define('KND_SUPPORT_EMAIL',         'support@te-st.ru');
+define('KND_SETUP_WIZARD_URL',      admin_url('themes.php?page=knd-setup-wizard'));
 
 if( !isset($content_width) ) {
 	$content_width = 800; /* pixels */
@@ -23,7 +23,13 @@ function knd_setup() {
 	load_theme_textdomain('knd', get_template_directory().'/lang');
 	//add_theme_support( 'automatic-feed-links' );	
 	add_theme_support('title-tag');
-	add_theme_support('html5', array('search-form', 'comment-form', 'comment-list', 'gallery', 'caption',));
+	add_theme_support('html5', array(
+		'search-form', 
+		'comment-form', 
+		'comment-list', 
+		'gallery', 
+		'caption',)
+	);
 
 	// Menus
 	$menus = array(
